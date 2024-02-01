@@ -16,7 +16,7 @@ const server = http.createServer((req, res) => {
       res.end(response);
     } else {
       res.writeHead(404, { 'Content-Type': 'text/html' });
-      res.end('Add your name after the = then put it into the search bar. For Example: http:/localhost:3000/COMP4537/labs/3/getDate?name=Rohil');
+      res.end('Add your name after the = then put it into the search bar. For Example: https://squid-app-c8omt.ondigitalocean.app//COMP4537/labs/3/getDate?name=Rohil');
     }
 
   }).listen(process.env.PORT || 3000);
